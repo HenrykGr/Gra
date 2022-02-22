@@ -44,4 +44,11 @@ class GameCharacter {
     public void setEnergy(int energy) {
         this.energy = energy;
     }
+
+    double totalPower() {
+        return power;
+    }
+    double totalDefense(){
+        return defense;
+    }
 }
