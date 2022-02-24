@@ -18,8 +18,6 @@ class Offender extends GameCharacter {
 
     @Override
     double totalPower() {
-        double result;
-        result = super.totalPower() * bonusPower;
-        return getPower() + result;
+        return getPower() + super.totalPower() * bonusPower;
     }
 }

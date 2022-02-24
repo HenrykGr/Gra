@@ -18,8 +18,6 @@ public class Deffender extends GameCharacter {
 
     @Override
     double totalDefense() {
-        double result;
-        result = super.totalDefense() * bonusDefense;
-        return getDefense() + result;
+        return getDefense() + super.totalDefense() * bonusDefense;
     }
 }
